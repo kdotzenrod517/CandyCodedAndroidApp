@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codeschool.candycoded.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="383dp"
+        android:layout_height="139dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/candy_coded"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/products_title"
+        android:paddingTop="@dimen/activity_padding"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/title_size"
+        android:id="@+id/text_view_title"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_candy"
+        android:divider="#EB01A5"
+        android:paddingTop="@dimen/activity_padding"
+        android:paddingBottom="@dimen/activity_padding"
+        android:dividerHeight="3dp">
+
+    </ListView>
+
+</LinearLayout>
